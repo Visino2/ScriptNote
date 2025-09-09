@@ -1,6 +1,6 @@
 import { useState } from "react";
-import NoteCard from "../components/NoteCard";
-import FolderCard from "../components/FolderCard";
+import NoteCard from "../Components/Notecard";
+import FolderCard from "../Components/FolderCard"
 import { FaPlus } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion"; // ✅ Import Framer Motion
