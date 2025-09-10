@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Sidebar from "./Components/Sidebar";
 import Navbar from "./Components/Navbar";
 
-import Signin from "./Pages/Sigin";
+import Signin from "./Pages/Signin";
 import Dashboard from "./Pages/Dashboard";
 import AddFolder from "./Pages/AddFolder";
 import AddNote from "./Pages/AddNote";
@@ -17,7 +17,7 @@ export default function App() {
         {/* Public route */}
         <Route path="/signin" Component={Signin} />
 
-        {/* Protected / App layout routes */}
+        
         <Route
           path="/*"
           element={
@@ -26,7 +26,7 @@ export default function App() {
               <div className="flex-1">
                 <Navbar />
                 <Routes>
-                  <Route path="/" Component={Dashboard} />
+                  <Route path="/" Component={Dashboard } />
                   <Route path="/add-folder" Component={AddFolder} />
                   <Route path="/add-note" Component={AddNote} />
                   <Route path="/calendar" Component={Calendar} />
